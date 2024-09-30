@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de sitio web universitario</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Mantén solo uno de los enlaces a la hoja de estilo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <!-- Sección de encabezado -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navelinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="about.html">ACERCA DE</a></li>
+                    <li><a href="course.html">CURSOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contacta Con Nosotros</h1>
+    </section>
+    
+    <!-- Sección de ubicación -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.644886285739!2d-5.975182399999999!3d37.3745787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c15a8b1607d%3A0x576cfae4b37748a7!2sAcademia%20Oposiciones%20%7C%20MasterD%20Sevilla!5e0!3m2!1sar!2ses!4v1726532097947!5m2!1sar!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <!-- Sección de contacto -->
+    <section class="contact-us">
+        <h1>Contáctanos</h1>
+        <div class="row">
+            <div class="contact-col">
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Dirección</h5>
+                    <p>Calle Falsa 123, Ciudad, País</p>
+                </span>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>Teléfono</h5>
+                    <p>+34 46956 7890</p>
+                </span>
+            </div>
+            <div class="contact-col">
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>Correo Electrónico</h5>
+                    <p>masterduni@gmail.com</p>
+                </span>
+            </div>
+        </div>
+        <h2>Envíanos un Mensaje</h2>
+        <form action="">
+            <label for="name">Nombre:</label>
+            <input id="name" type="text" placeholder="Nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input id="email" type="email" placeholder="Correo Electrónico" required>
+            
+            <label for="subject">Asunto:</label>
+            <input id="subject" type="text" placeholder="Asunto" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" rows="8" placeholder="Mensaje" required></textarea>
+            
+            <button type="submit" class="hero-btn red-btn">Enviar</button>
+        </form>
+    </section>
+    
+    <!-- Pie de página -->
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Hecho con <i class="fa fa-heart-o"></i> por HASHEM KREISHAN</p>
+    </section>
+    
+    <!-- JavaScript -->
+    <script>
+        var navlinks = document.getElementById("navelinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

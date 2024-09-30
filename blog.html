@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de sitio web universitario - Blog</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Mantén solo uno de los enlaces a la hoja de estilo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <!-- Sección de encabezado -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navelinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="about.html">ACERCA DE</a></li>
+                    <li><a href="course.html">CURSOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Nuestro certificado y programa en línea 2024</h1>
+    </section>
+    
+    <!-- Sección del blog -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="Certificado de programa 2024">
+                <h2>Nuestro certificado y programa en línea 2024</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus. Donec sit amet nisl non justo malesuada fermentum.</p>
+                
+                <div class="comment-box">
+                    <h3>Deja un comentario</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Tu Nombre">
+                        <input type="email" placeholder="Tu Correo Electrónico">
+                        <textarea rows="5" placeholder="Tu Comentario"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Publicar Comentario</button>
+                    </form>
+                </div>
+                
+                <a href="#" class="hero-btn">Leer Más</a>
+            </div>
+            <div class="blog-right">
+                <h3>Categoría de Publicación</h3>
+                <div>
+                    <span>Analítica de Negocios</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Ciencia de Datos</span>
+                    <span>19</span>
+                </div>
+                <div>
+                    <span>Ciencias de la Computación</span>
+                    <span>17</span>
+                </div>
+                <div>
+                    <span>Programación</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Periodismo</span>
+                    <span>15</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pie de página -->
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Hecho con <i class="fa fa-heart-o"></i> por HASHEM KREISHAN</p>
+    </section>
+    
+    <!-- JavaScript -->
+    <script>
+        var navlinks = document.getElementById("navelinks");
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

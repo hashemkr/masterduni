@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de la universidad más grande del mundo. Ofrecemos una amplia gama de cursos y contamos con campus en diferentes ciudades.">
+    <title>Diseño de Sitio Web Universitario</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+   <section class="header" style="background-image: url('images/background.jpg'); background-size: cover; background-position: center; height: 100vh;">
+    <nav>
+        <!-- Logo con dimensiones originales -->
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo de la Universidad" width="200" height="100">
+        </a>
+        
+        <div class="nav-links" id="navelinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="about.html">ACERCA DE</a></li>
+                <li><a href="course.html">CURSOS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    
+    <div class="text-box">
+        <h1>La universidad más grande del mundo</h1>
+        <p>La educación es la clave del éxito</p>
+        <a href="#" class="hero-btn">Para saber más</a>
+    </div>
+</section>
+
+    
+    <!-------- Cursos -------->
+    <section class="course">
+        <h1>Los cursos que ofrecemos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermedia</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h3>Grado</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h3>Graduación</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-------- Campus -------->
+    <section class="campus">
+        <h1>Nuestro campus global</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <!-- Imagen de campus con dimensiones originales -->
+            <div class="campus-col">
+                <img src="images/london.png" alt="Imagen del campus en Sevilla" width="500" height="300">
+                <div class="layer">
+                    <h3>Sevilla</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="Campus en Madrid" width="500" height="300">
+                <div class="layer">
+                    <h3>Madrid</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="Campus en Granada" width="500" height="300">
+                <div class="layer">
+                    <h3>Granada</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-------- Instalaciones -------->
+    <section class="facilidades">
+        <h1>Nuestras facilidades</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+        <div class="row">
+            <div class="facilidades-col">
+                <img src="images/library.png" alt="Biblioteca de clase mundial" width="400" height="300">
+                <h3>Biblioteca de Clase Mundial</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+            <div class="facilidades-col">
+                <img src="images/basketball.png" alt="Campo de baloncesto" width="400" height="300">
+                <h3>El Mayor Campo de Juego</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+            <div class="facilidades-col">
+                <img src="images/cafeteria.png" alt="Cafetería" width="400" height="300">
+                <h3>Comida Sabrosa y Saludable</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-------- Testimonios -------->
+    <section class="testimonios">
+        <h1>Lo que dicen nuestros estudiantes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="testimonios-col">
+                <img src="images/user1.jpg" alt="Testimonio de Christine Berkley" width="150" height="150">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonios-col">
+                <img src="images/user2.jpg" alt="Testimonio de Hashem Kreishan" width="150" height="150">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                    <h3>Hashem Kreishan</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!------- Llamado a la Acción ------->
+    <section class="cta">
+        <h1>Inscríbete en nuestros diversos cursos en línea<br>Desde cualquier parte del mundo</h1>
+        <a href="" class="hero-btn">Contáctanos</a>
+    </section>
+    
+    <!-------- Acerca de Nosotros -------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Somos la universidad más grande del mundo</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendisse condimentum vestibulum ex ac cursus. Nam pharetra viverra efficitur. Sed pellentesque luctus arcu, quis finibus nibh luctus mattis.</p>
+                <a href="">Explora Ahora</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="Acerca de nosotros" width="600" height="400">
+            </div>
+        </div>
+    </section>
+    
+    <!------- Footer ------->
+
+    <section class="footer">
+    <h4>Acerca de Nosotros</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br> sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+
